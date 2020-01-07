@@ -1,0 +1,6 @@
+mixin navigation(...opt)
+    nav.nav
+        ul.nav__list
+            each item in opt
+                li.nav__item
+                    a(href=`#${item}` target="_blank")= item
