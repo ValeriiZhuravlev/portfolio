@@ -1,0 +1,65 @@
+.header {
+    height: 100vh;
+    padding: 20px 50px;
+
+    &__logo {
+        position: relative;
+        display: inline-block;   
+        border: 5px solid #273650;
+        padding:0 30px;
+        font-size: 32px;
+        font-weight: 700;
+        z-index: 20;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background: url('./assets/img/header-bg.jpg') no-repeat center;
+        background-size: cover;
+        z-index: 3;
+    }
+
+    &__main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80vw;
+        height: 85vh;
+        transform: translate(-50%, -50%);
+        background: #eef8f6;
+        z-index: 2;
+    }
+
+    &__email {
+        position: absolute;
+        bottom: 10px;
+    }
+}
+
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    background: #273650;
+    width: 60vmin;
+    height: 60vmin;
+    z-index: 20;
+    color: #fff;
+
+    &__name {
+        font-size: 26px;
+    }
+
+    &__profession {
+        font-size: 18px;
+    }
+}
