@@ -38,6 +38,20 @@
         position: absolute;
         bottom: 10px;
     }
+
+    &__text {
+        color: gray;
+        font-weight: 300;
+    }
+
+    &__value {
+        color: #273650;
+
+        &:hover {
+            text-decoration: none;
+            color: #273650;
+        }
+    }
 }
 
 .heading {

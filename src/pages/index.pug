@@ -8,8 +8,10 @@ html(lang="en")
     body
 
         include blocks/navigation.pug
+        include blocks/works.pug
+        include blocks/skills.pug
 
-        +navigation('Портфолио', 'О себе', 'Навыки', 'Контакты')
+        +navigation('Портфолио', 'Навыки', 'Контакты')
         header.header
             .header__logo Dev
             .header__bg
@@ -20,4 +22,22 @@ html(lang="en")
                 h2.heading__profession Front-end developer
             .header__email
                 span.header__text Почта: 
-                a(href="mailto:valera030219972010@gmail.com") valera030219972010@gmail.com
+                a(href="mailto:valera030219972010@gmail.com" class="header__value") valera030219972010@gmail.com
+        main.main
+            section.works
+                .works__wrapper
+                    h1.works__title Портфолио
+                    +works(["#", "giant"],
+                           ["#", "local-business"],
+                           ["#", "wordoutlet"],
+                           ["#", "gllacy"],
+                           ["#", "toxin"])
+            section.skills
+                .skills__wrapper
+                    .skills__title Мои навыки
+                    +skills(["95", "red", "html"],
+                            ["80", "blue", "css"],
+                            ["70", "green", "js"],
+                            ["70", "green", "js"],
+                            ["70", "green", "js"],
+                            ["70", "green", "js"])

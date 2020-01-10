@@ -2,7 +2,8 @@
 @import 'assets/style_utils/normalize';
 @import 'assets/style_utils/libs';
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap&subset=cyrillic');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -20,3 +21,5 @@ html, body {
 
 @import 'assets/blocks/navigation.scss';
 @import 'assets/blocks/header.scss';
+@import 'assets/blocks/works.scss';
+@import 'assets/blocks/skills.scss';

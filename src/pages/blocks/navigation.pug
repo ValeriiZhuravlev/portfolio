@@ -3,4 +3,4 @@ mixin navigation(...opt)
         ul.nav__list
             each item in opt
                 li.nav__item
-                    a(href=`#${item}` target="_blank")= item
+                    a(href=`#${item}` target="_blank" class="nav__link")= item
