@@ -1,0 +1,83 @@
+.aboutme {
+    background: #273650;
+    padding: 30px 50px ;
+
+    &__wrapper {
+        background: #eef8f6;
+        padding-bottom: 40px;
+    }
+
+    &__title {
+        padding-top: 40px;
+        padding-left: 50px;
+        color: #273650;
+    }
+
+    &__secondary {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    
+    &__resume {
+        display: block;
+        margin: 0 auto;
+        width: 180px;
+        padding: 10px 20px;
+        border: 2px solid #273650;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        color: #273650;
+
+        &:hover {
+            color: #273650; 
+            text-decoration: none;
+        }
+    }
+}
+
+.skills {
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 60px 30px 50px;
+        list-style: none;
+    }
+
+    &__item {
+        background: #fff;
+        max-width: 240px;
+        padding: 150px 10px 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        background-position: 70px 20px;
+        background-repeat: no-repeat;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+        &_resize {
+            background-image: url("./assets/img/resize.svg");
+        }
+
+        &_cross-browser {
+            background-image: url("./assets/img/binary-data.svg");
+        }
+
+        &_validation {
+            background-image: url("./assets/img/browser.svg");
+        }
+
+        &_photoshop {
+            background-image: url("./assets/img/software.svg");
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #273650;
+    }
+}

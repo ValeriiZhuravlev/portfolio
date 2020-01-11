@@ -1,0 +1,57 @@
+.contact {
+    background: #273650;
+    padding: 30px 50px;
+
+    &__wrapper {
+        background: #eef8f6;
+
+        &:after {
+            content: "";
+            display: block;
+            height: 100%;
+            clear: both;
+        }
+    }
+
+    &__bg {
+        float: right;
+        width: 50%;
+        height: 600px;
+        background: url("./assets/img/contact-bg.jpg");
+        background-size: cover;
+    }
+
+    &__wrapper-form {
+        width: 50%;
+        padding-top: 50px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    &__input {
+        margin: 0 auto 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 80%;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+        &_textarea {
+            padding-top: 5px;
+            height: auto;
+        }
+    }
+
+    &__button {
+        display: block;
+        margin: 0 auto;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border: 2px solid #111;
+        color: #111;
+        font-weight: 700;
+        background: transparent;
+    }
+}

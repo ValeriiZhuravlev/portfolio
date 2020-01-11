@@ -1,8 +1,9 @@
 mixin skills(...opt)
-    ul.skills__list
-        each item in opt
-            li.skills__item
-                .skills__name(class=`skills__name-${item[1]}`)
-                    span.skills__text= item[2]
-                .skills__fill(class=`skills__fill-${item[1]} skills__fill-${item[0]}`)
-                .skills__number= `${item[0]}%`
+    .skills&attributes(attributes)
+        ul.skills__list
+            each item in opt
+                li.skills__item(class=`skills__item_${item[2]}`)
+                    h3.skills__title= item[0]
+                    p.skills__text= item[1]
+            
+            

@@ -10,34 +10,48 @@ html(lang="en")
         include blocks/navigation.pug
         include blocks/works.pug
         include blocks/skills.pug
+        include blocks/technology.pug
 
-        +navigation('Портфолио', 'Навыки', 'Контакты')
+        +navigation('Works', 'About me', 'Contact me')
         header.header
             .header__logo Dev
             .header__bg
                 .header__img
                 .header__main
             .header__heading.heading
-                h1.heading__name Валерий Журавлев
+                h1.heading__name Valery Juravlev
                 h2.heading__profession Front-end developer
             .header__email
-                span.header__text Почта: 
+                span.header__text Email: 
                 a(href="mailto:valera030219972010@gmail.com" class="header__value") valera030219972010@gmail.com
         main.main
             section.works
                 .works__wrapper
-                    h1.works__title Портфолио
+                    h1.works__title Works
                     +works(["#", "giant"],
                            ["#", "local-business"],
                            ["#", "wordoutlet"],
                            ["#", "gllacy"],
                            ["#", "toxin"])
-            section.skills
-                .skills__wrapper
-                    .skills__title Мои навыки
-                    +skills(["95", "red", "html"],
-                            ["80", "blue", "css"],
-                            ["70", "green", "js"],
-                            ["70", "green", "js"],
-                            ["70", "green", "js"],
-                            ["70", "green", "js"])
+            section.aboutme
+                .aboutme__wrapper
+                    .aboutme__title
+                        h1.aboutme__primary Valery Juravlev
+                        h2.aboutme__secondary Frontend developer
+                    +skills(["Adaptive Layout", "Adaptive layout using flexbox and media queries", "resize"],
+                            ["Cross-Browser", "Optimal site display in all modern browsers", "cross-browser"],
+                            ["Validation", "Compliance to W3C standards", "validation"],
+                            ["Photoshop", "Using photoshop to work with layouts", "photoshop"])(class="aboutme__skills")
+                    +technology(["HTML5"], ["CSS3"], ["SCSS"], ["Pug"], ["JavaScript"], ["NodeJS"], ["JQueary"], ["AJAX"], ["Git"], ["Webpack"], ["Gulp"], ["PHP"], ["MySQL"], ["Photoshop"], ["Figma"])
+                    a.aboutme__resume(href="https://www.superjob.ru/resume/frontend-developer-47538065.html" target="_blank")
+                        span my resume
+            section.contact
+                .contact__wrapper
+                    .contact__wrapper-form
+                        h2.contact__title contact me
+                        form.contact__form
+                                input.contact__input(placeholder="Full Name")
+                                input.contact__input(placeholder="Email")
+                                textarea.contact__input.contact__input_textarea(name="message", cols="50", rows="10" placeholder="Your message")
+                                button.contact__button(type="submit" ) submit
+                    .contact__bg

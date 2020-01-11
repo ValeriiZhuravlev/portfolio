@@ -1,0 +1,33 @@
+.technology {
+
+    &__title {
+        width: 250px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        text-align: center;
+        border-bottom: 2px solid #273650;
+        color:#273650;
+    }
+
+    &__list {
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        list-style: none;
+        max-width: 550px;
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 5px 20px;
+        border-radius: 30px;
+        margin-bottom: 10px;
+        background: #273650;
+    }
+
+    &__name {
+        color: #fff;
+        font-size: 21px;
+    }
+}

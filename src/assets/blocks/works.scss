@@ -32,6 +32,7 @@
         overflow: hidden;
         border: 5px solid #273650;
         margin: 0 10px 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
         &:hover {
             .works__description {
