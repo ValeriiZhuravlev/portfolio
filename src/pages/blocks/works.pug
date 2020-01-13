@@ -1,9 +1,12 @@
 mixin works(...opt)
+    -let i = 0.5
+    -let step = 0.4
+
     ul.works__list
         each item in opt
-            li.works__item
+            li.works__item.wow.zoomIn(data-wow-duration=`${i}s`)
                 .works__wrap
-                    img.works__img(src=`../../assets/img/${item[1]}.jpg`)
+                    img.works__img(src=`../../assets/img/${item[1]}.jpg` alt=item[1])
                     .works__description(data-name=`${item[1]}`)
                         a.works__link(href=item[0] target="_blank")= item[1]
-                        button.works__button(href=item[1]) description
+            -i+= step

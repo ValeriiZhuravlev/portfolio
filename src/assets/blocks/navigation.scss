@@ -30,6 +30,10 @@
             color: #273650;
         }
     }
+}
 
-   
+@media screen and (max-width: 452px) {
+    .nav__list {
+        transform: translate(-47%, 0) rotate(90deg);
+    }
 }

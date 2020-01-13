@@ -6,10 +6,17 @@
         position: relative;
         display: inline-block;   
         border: 5px solid #273650;
+        margin-top: 30px;
         padding:0 30px;
         font-size: 32px;
         font-weight: 700;
         z-index: 20;
+        transition: 0.7s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     &__img {
@@ -68,12 +75,55 @@
     height: 60vmin;
     z-index: 20;
     color: #fff;
+    overflow: hidden;
 
     &__name {
         font-size: 26px;
     }
 
     &__profession {
+        position: relative;
         font-size: 18px;
+    }
+
+    &__link {
+        position: absolute;
+        bottom: 50px;
+        transform: rotate(90deg);
+        cursor: pointer;
+        
+        img {
+            transition: 0.8s;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        &__value {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 587px) {
+    .header {
+
+        &__text {
+            display: none;
+        }
+
+        &__value {
+            position: relative;
+            transform: rotate(-90deg) translateX(80px);
+            z-index: 30;
+            font-size: 13px;
+        }
     }
 }

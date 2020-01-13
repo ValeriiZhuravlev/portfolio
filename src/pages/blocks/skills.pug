@@ -1,9 +1,12 @@
 mixin skills(...opt)
+    -let i = 0.8
+    -let step = 0.3
+
     .skills&attributes(attributes)
         ul.skills__list
             each item in opt
-                li.skills__item(class=`skills__item_${item[2]}`)
+                li.skills__item(class=`skills__item_${item[2]} wow zoomIn` data-wow-duration=`${i}s`)
                     h3.skills__title= item[0]
                     p.skills__text= item[1]
-            
+                -i+= step
             

@@ -1,7 +1,10 @@
 mixin technology(...opt)
+    -let i = 0.4
+    -let step = 0.1
     .technology
         h2.technology__title My skills
         ul.technology__list
             each item in opt
-                li.technology__item
+                li.technology__item.wow.fadeInLeft(data-wow-duration=`${i}s`)
                     span.technology__name= item[0]
+                -i+= step

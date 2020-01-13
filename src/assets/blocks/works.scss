@@ -1,10 +1,7 @@
 .works {
-    background: #273650;
-    padding: 30px 50px;
-
-    &__wrapper {
-        background: #fff;
-    }
+    min-height: 95vh;
+    background: #fff;
+    margin-bottom: 5vh;
 
     &__title {
         display: block;
@@ -28,7 +25,7 @@
 
     &__item {
         position: relative;
-        width: 350px;
+        width: 30%;
         overflow: hidden;
         border: 5px solid #273650;
         margin: 0 10px 20px;
@@ -83,5 +80,17 @@
         font-size: 16px;
         text-transform: uppercase;
         background: transparent;
+    }
+}
+
+@media screen and (max-width: 844px) {
+    .works__item {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 502px) {
+    .works__item {
+        width: 100%;
     }
 }

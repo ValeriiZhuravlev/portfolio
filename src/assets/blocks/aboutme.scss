@@ -1,11 +1,8 @@
 .aboutme {
-    background: #273650;
-    padding: 30px 50px ;
-
-    &__wrapper {
-        background: #eef8f6;
-        padding-bottom: 40px;
-    }
+    background: #eef8f6;
+    padding-bottom: 40px;
+    min-height: 95vh;
+    margin-bottom: 5vh;
 
     &__title {
         padding-top: 40px;
